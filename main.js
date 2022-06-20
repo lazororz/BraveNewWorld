@@ -22,13 +22,41 @@ renderer.render(scene, camera);
 // Torus
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+const material = new THREE.MeshBasicMaterial({ color: 0xffff00, wireframe: true });
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+scene.add(torus)
 
-function animate(params) {
-  
+function animate() {
+  requestAnimationFrame( animate ); 
+
+  torus.rotation.x += 0.01;
+  torus.rotation.y += 0.005;
+  torus.rotation.z += 0.01;
+
+  renderer.render( scene, camera );
+
 }
 
-animate();
+animate()
+
+// text  
+
+const loader = new FontLoader();
+
+loader.load( 'fonts/BLADRMF_.TFF', function ( font ) {
+
+	const geometry = new TextGeometry( 'Blade Runner', {
+		font: font,
+		size: 80,
+		height: 5,
+		curveSegments: 12,
+		bevelEnabled: true,
+		bevelThickness: 10,
+		bevelSize: 8,
+		bevelOffset: 0,
+		bevelSegments: 5
+	} );
+} );
+
+
