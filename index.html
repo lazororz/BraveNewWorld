@@ -2,8 +2,8 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
+<embed src="/music/Industrial_Junk.mp3" loop="true" autostart="true" width="2" height="0">
 <main class="scanlines">
-  <embed src="/music/Industrial_Junk.mp3" loop="true" autostart="true" width="2" height="0">
   <div class="screen">
     <canvas id="canvas" class="picture"></canvas>
     <div class="overlay">
@@ -28,3 +28,6 @@
   </div>
 </main>
 <script src="main.js"></script>
+<script>
+  var audio = new audio("music/Industrial_Junk.mp3")
+</script>
