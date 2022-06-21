@@ -15,7 +15,7 @@ canvas.width = ww / 3;
 canvas.height = (ww * 0.5625) / 3;
 
 // Generate CRT noise
-function snow(ctx) {
+function snow() {
 
     var w = ctx.canvas.width,
         h = ctx.canvas.height,
@@ -31,7 +31,7 @@ function snow(ctx) {
 }
 
 function animate() {
-    snow(ctx);
+    snow();
     frame = requestAnimationFrame(animate);
 };
 
