@@ -1,6 +1,20 @@
-canvas{
+canvas {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
+
+}
+
+@font-face {
+  font-family: "brave";
+  src: url('fonts/sf_sports_night-webfont.woff2');
+}
+
+h1 {
+
+  font-family: "brave";
+  color: #fff;
   
+
 }
