@@ -80,5 +80,8 @@ window.addEventListener('keydown', function(e) {
 document.addEventListener('keydown', (e) => {
     if (e.code === "Space") {
         alert("test");
+        Controls = document.querySelector('.active');22
+
+
     }
 });
