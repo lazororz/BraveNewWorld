@@ -72,3 +72,13 @@ window.addEventListener('keydown', function(e) {
         ul.children[idx].classList.add('active');
     }
 }, false);
+
+// CONTROLS 1 2
+
+// const Controls = document.querySelector('.active');
+
+document.addEventListener('keydown', (e) => {
+    if (e.code === "Space") {
+        alert("test");
+    }
+});
