@@ -17,6 +17,14 @@ h1 {
   
 }
 
+p {
+  color: #fff;
+}
+
+figcaption{
+  color: #fff;
+}
+
 .sec1{
   padding-left: 10%;
   margin-top: 45vh;
